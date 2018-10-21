@@ -1,0 +1,1 @@
+$("body").scrollspy({target:"#sidebar",offset:$("#navbar").outerHeight(!0)}),function(){$.ajax({url:"https://my.donreach.com/api/subscription/1",dataType:"json",xhrFields:{withCredentials:!0},success:function(t){try{var a=t.plugins.tyk.api_key;$("#main").html($("#main").html().replace(/YOUR_API_KEY/g,a))}catch(t){}}})}();

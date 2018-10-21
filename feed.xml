@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>donReach Social Tools
+      </title>
+      <description>Increase your social reach and drive more traffic with our free social tools &amp; widgets.
+      </description>
+      <link>https://donreach.com</link>
+    <atom:link href="https://donreach.com/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+        <title><![CDATA[Public social share count API depreciated
+]]></title>
+        <description><![CDATA[&lt;p&gt;The old (keyless) API at &lt;code class=&quot;highlighter-rouge&quot;&gt;count.donreach.com&lt;/code&gt; is of now depreciated and will be
+&lt;strong&gt;taken offline&lt;/strong&gt; on the 1. January 2018!&lt;/p&gt;
+
+&lt;p&gt;To continue using the API please &lt;a href=&quot;/pricing/&quot;&gt;sign up for a free API key&lt;/a&gt;.
+The signup only takes 30 seconds and your API key will be activated instantly.&lt;/p&gt;
+
+&lt;p&gt;We’re sorry for any inconvenience caused, but sadly our API is being abused,
+using proxy servers to go beyond the set rate-limit.&lt;/p&gt;
+
+&lt;p&gt;The good news however is that we’re giving away a whopping 15.000 API calls per
+day, so the majority of our users won’t be affected and can continue to use our
+service &lt;strong&gt;absolutely free!&lt;/strong&gt;&lt;br /&gt;
+On top of that we have upgraded our server infrastructure heavily and rewritten
+large parts of the API, making it a ton faster and more reliable.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions regarding the switch to the new API, feel free to give
+us a shout in the comments below or &lt;a href=&quot;/support/contact/&quot;&gt;open a support ticket&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Happy coding!&lt;/p&gt;
+]]></description>
+        <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
+        <link>https://donreach.com/blog/public-api-depreciated/</link>
+      <guid isPermaLink="true">https://donreach.com/blog/public-api-depreciated/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Celebrate the launch of our new social share count API with a 50% discount!
+]]></title>
+      <description><![CDATA[&lt;p&gt;Welcome to the all new donreach.com. It’s been a while since anything
+noteworthy happened here so I’m all the more pleased to break the silence with
+not only a flashy new website but also the news most of you have been waiting
+for: our premium social share count API has finally launched!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;premium-social-api-launched&quot;&gt;Premium Social API Launched&lt;/h2&gt;
+
+&lt;p&gt;Due to ever rising popularity, our open social share count API has been plagued
+by bad performance for quite some time now and many of you have asked us for a
+long-term solution, so I’m happy to announce our most-requested feature by far:
+a lightning fast premium social share count API service with more social
+networking services supported than ever!&lt;/p&gt;
+
+&lt;p&gt;Here are some of the highlights:&lt;/p&gt;
+
+&lt;h3 id=&quot;get-50-off-for-6-months&quot;&gt;Get 50% off for 6 months&lt;/h3&gt;
+
+&lt;p&gt;To celebrate the launch of the new API we’re giving anyone who signs up by the
+30th of June a whopping 50% off their first 6 months subscription.&lt;/p&gt;
+
+&lt;p&gt;To get the discount simply enter the coupon code &lt;code class=&quot;highlighter-rouge&quot;&gt;LAUNCH50&lt;/code&gt; during checkout.&lt;/p&gt;
+
+&lt;h3 id=&quot;improved-performance&quot;&gt;Improved performance&lt;/h3&gt;
+
+&lt;p&gt;To cope with the millions of people accessing our API every month we’ve
+rewritten it yet again, benchmarking our code at every step of the way to
+squeeze out every last bit of performance possible. On top of that, we’re
+applying a very generous ratio of premium API users per server to ensure a
+reliable service, even during peak-times.&lt;/p&gt;
+
+&lt;h3 id=&quot;18-new-social-networking-services-supported&quot;&gt;18 new social networking services supported&lt;/h3&gt;
+
+&lt;p&gt;That’s right, the amount of different social share counts our API can fetch has
+nearly doubled! We’ve expanded our portfolio of supported providers to include
+major non-english social networks from around the world including China, Russia,
+Spain, Poland &amp;amp; Bulgaria, just to name a few.&lt;/p&gt;
+
+&lt;h3 id=&quot;follower-counts-beta&quot;&gt;Follower counts (BETA)&lt;/h3&gt;
+
+&lt;p&gt;Starting now you can also track social profiles’ follower counts through our
+API. This functionality is still in BETA though and likely to change.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;For more information about our social API check out the following links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/docs/social-api/reference/&quot;&gt;API Reference&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/pricing/&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+]]></description>
+      <pubDate>Mon, 22 May 2017 00:00:00 +0000</pubDate>
+      <link>https://donreach.com/blog/social-api-premium-launched/</link>
+    <guid isPermaLink="true">https://donreach.com/blog/social-api-premium-launched/</guid>
+  </item>
+</channel>
+</rss>

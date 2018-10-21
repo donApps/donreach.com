@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Reference &middot; donReach Social Tools</title>
+    <meta name="description" content="Increase your social reach and drive more traffic with our free social tools & widgets.">
+    <meta name="keywords" content="share buttons, share count, social analytics">
+    <link rel="icon" href="https://donreach.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://donreach.com/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="https://donreach.com/assets/images/touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://donreach.com/assets/images/touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://donreach.com/assets/images/touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://donreach.com/assets/images/touch-icon-152x152-precomposed.png">
+    <meta name="author" content="Adam Bouqdib">
+    <link rel="canonical" href="https://donreach.com/docs/social-api/reference/" />
+    <meta property="og:title" content="API Reference" />
+    <meta property="og:description" content="Increase your social reach and drive more traffic with our free social tools & widgets." />
+    <meta property="og:image" content="https://donreach.com/assets/logo-729439f380dfbef4ae34f4606cd7e3297d44eaf115e7e40c2e8c4f7bc00d035a.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="donReach Social Tools"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:url" content="https://donreach.com/docs/social-api/reference/" />
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@abemedia"/>
+    <meta name="twitter:domain" content="https://donreach.com"/>
+    <meta name="twitter:creator" content="@abemedia"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://donreach.com/assets/app-b8f9d5fccb1707386a171b0f2e0697ea9778cdb396b3e49b068a451890284329.css">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:light,regular,bold' />
+    <link rel="alternate" type="application/rss+xml" title="donReach Social Tools" href="https://donreach.com/feed.xml">
+  </head>
+  <body>
+    <a class="sr-only" href="#content">Skip to main content</a>
+    <header class="navbar navbar-default navbar-fixed-top" id="navbar">
+      <ul class="nav navbar-nav hidden-xs">
+        <li class="don-menu">
+          <a href="#"><i class="fa fa-bars fa-lg"></i> MENU</a>
+          <ul class="don-nav">
+            <li>
+              <a href="#">Products<i class="fa fa-chevron-right"></i></a>
+              <ul class="don-nav">
+                <li><a href="https://donreach.com/products/"><b>Products</b></a></li>
+                <li>
+                  <a href="https://donreach.com/social-api/">
+                    Social API <span>Easily track shares & followers from all the most popular social platforms.</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://donreach.com/social-share-buttons/">
+                    Social Share Buttons <span>Engage your audience and get more shares & likes with our free, customisable social sharing buttons.</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://donreach.com/social-analytics/">
+                    Social Analytics <span>Understand your visitors, monitor your competition and stay up-to-date with what's currently trending.</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="#">Documentation<i class="fa fa-chevron-right"></i></a>
+              <ul class="don-nav">
+                <li><a href="https://donreach.com/docs/"><b>Documentation</b></a></li>
+                <li>
+                  <a href="https://donreach.com/docs/social-share-buttons">
+                    Social Share Buttons <span></span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="https://donreach.com/docs/social-api">
+                    Social API <span></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://donreach.com/pricing/">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Support<i class="fa fa-chevron-right"></i></a>
+              <ul class="don-nav">
+                <li><a href="https://donreach.com/support/"><b>Support</b></a></li>
+                <li>
+                  <a href="https://donreach.com/support/accounts-billing/">
+                    Accounts & Billing <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://donreach.com/support/social-api/">
+                    Social API <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://donreach.com/support/share-buttons/">
+                    Social Share Buttons <span></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Blog<i class="fa fa-chevron-right"></i></a>
+              <ul class="don-nav">
+                <li><a href="https://donreach.com/blog/"><b>Blog</b></a></li>
+                <li>
+                  <a href="https://donreach.com/blog/public-api-depreciated/">
+                    Public social share count API depreciated <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://donreach.com/blog/social-api-premium-launched/">
+                    Celebrate the launch of our new social share count API with a 50% discount! <span></span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <hr>
+              <form action="https://donreach.com/search">
+                <div class="input-group">
+                  <input type="search" name="q" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button"><span class="fa fa-search"></span></button>
+                  </span>
+                </div>
+              </form>
+              <hr>
+              <h5>Connect with us</h5>
+              <ul class="list-inline">
+                <li><a href="https://facebook.com/abemedia" target="_blank" class="btn don-btn-facebook"><i class="fa fa-fw fa-lg bi bi-facebook"></i></a></li>
+                <li><a href="https://twitter.com/abemedia" target="_blank" class="btn don-btn-twitter"><i class="fa fa-fw fa-lg bi bi-twitter"></i></a></li>
+                <li><a href="https://plus.google.com/abemedia" target="_blank" class="btn don-btn-google"><i class="fa fa-fw fa-lg bi bi-google"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="pull-right">
+        <a href="https://my.donreach.com/login" class="btn btn-default navbar-btn" data-user-text="My Account" data-welcome="Welcome back {user}!" id="login_btn">Sign in</a>
+      </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="https://donreach.com/">
+          <img src="https://donreach.com/assets/logo-729439f380dfbef4ae34f4606cd7e3297d44eaf115e7e40c2e8c4f7bc00d035a.png" alt="donReach Social Tools" />
+        </a>
+      </div>
+      <nav class="navbar-collapse collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="https://donreach.com/products/">Products</a>
+          </li>
+          <li class="active">
+            <a href="https://donreach.com/docs/">Documentation</a>
+          </li>
+          <li>
+            <a href="https://donreach.com/pricing/">Pricing</a>
+          </li>
+          <li>
+            <a href="https://donreach.com/support/">Support</a>
+          </li>
+          <li>
+            <a href="https://donreach.com/blog/">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="bg-gray">
+      <div class="container">
+        <ol class="breadcrumb" xmlns:v="http://rdf.data-vocabulary.org/#">
+          <!--li><a href="/"><i class="fa fa-home fa-lg"></i> <span class="sr-only">Home</span></a></li-->
+          <li typeof="v:Breadcrumb">
+            <a href="https://donreach.com/docs" rel="v:url" property="v:title">Documentation</a>
+          </li>
+          <li typeof="v:Breadcrumb">
+            <a href="https://donreach.com/docs/social-api" rel="v:url" property="v:title"><span class="fa fa-share-alt"></span> Social API</a>
+          </li>
+          <li class="active">API Reference</li>
+        </ol>
+      </div>
+    </section>
+    <div class="container section" id="content">
+      <div class="row row-compact">
+        <div role="complementary" class="col-sm-3 col-lg-3">
+          <nav id="sidebar">
+            <div class="h4">&nbsp;&nbsp;&nbsp;<a href="#content">API Reference</a></div>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#authentication">Authentication</a></li>
+              <li><a href="#share-count">Share Count</a>
+                <ul class="nav nav-level-1">
+                  <li><a href="#parameters">Parameters</a></li>
+                  <li><a href="#example">Example</a></li>
+                  <li><a href="#providers">Providers</a></li>
+                  <li><a href="#enable-twitter-count">Enable Twitter Count</a></li>
+                </ul>
+              </li>
+              <li><a href="#follower-count">Follower Count</a>
+                <ul class="nav nav-level-1">
+                  <li><a href="#parameters-1">Parameters</a></li>
+                  <li><a href="#example-1">Example</a></li>
+                  <li><a href="#providers-1">Providers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-9" id="main">
+          <h1>API Reference</h1>
+          <p>The Social API is a REST API for getting social share counts &amp; follower counts from the majority of popular social platforms in the world.</p>
+          <h2 class="page-header" id="authentication">Authentication</h2>
+          <p>The API is authenticated by passing an <code class="highlighter-rouge">Authorization</code> header containing your API key with your request.</p>
+          <div class="language-http highlighter-rouge">
+            <pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/ENDPOINT</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.donreach.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">YOUR_API_KEY</span>
+</code></pre>
+          </div>
+          <h2 class="page-header" id="share-count">Share Count</h2>
+          <p>Retrieve social share counts for a URL using the <code class="highlighter-rouge">/shares</code> endpoint.</p>
+          <h3 id="parameters">Parameters</h3>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>url</strong> (required)</td>
+                <td>The URL of the page you want to fetch the social shares for.</td>
+              </tr>
+              <tr>
+                <td><strong>providers</strong> (required)</td>
+                <td>A comma seperated list of <a href="#providers">provider IDs</a> to get the share count from.</td>
+              </tr>
+              <tr>
+                <td><strong>callback</strong> (optional)</td>
+                <td>The JavaScript callback to execute (for JSONP).</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="example">Example</h3>
+          <div class="language-http highlighter-rouge">
+            <pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/shares?providers=facebook,google,twitter&amp;url=http://9gag.com/</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.donreach.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">YOUR_API_KEY</span>
+</code></pre>
+          </div>
+          <p>Which returns the following:</p>
+          <div class="language-json highlighter-rouge">
+            <pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"shares"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"facebook"</span><span class="p">:</span><span class="w"> </span><span class="mi">473897</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"google"</span><span class="p">:</span><span class="w"> </span><span class="mi">86494</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"twitter"</span><span class="p">:</span><span class="w"> </span><span class="mi">122435</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">682826</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://9gag.com/"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          </div>
+          <h3 id="providers">Providers</h3>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google+</td>
+                <td>google</td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+                <td>facebook</td>
+              </tr>
+              <tr>
+                <td>Baidu</td>
+                <td>baidu</td>
+              </tr>
+              <tr>
+                <td>Qzone</td>
+                <td>qzone</td>
+              </tr>
+              <tr>
+                <td>Twitter</td>
+                <td>twitter</td>
+              </tr>
+              <tr>
+                <td>VK</td>
+                <td>vk</td>
+              </tr>
+              <tr>
+                <td>Reddit</td>
+                <td>reddit</td>
+              </tr>
+              <tr>
+                <td>Sina Weibo</td>
+                <td>weibo</td>
+              </tr>
+              <tr>
+                <td>LinkedIn</td>
+                <td>linkedin</td>
+              </tr>
+              <tr>
+                <td>Mail.ru</td>
+                <td>mailru</td>
+              </tr>
+              <tr>
+                <td>Odnoklassniki</td>
+                <td>odnoklassniki</td>
+              </tr>
+              <tr>
+                <td>Tumblr</td>
+                <td>tumblr</td>
+              </tr>
+              <tr>
+                <td>Pinterest</td>
+                <td>pinterest</td>
+              </tr>
+              <tr>
+                <td>Pocket</td>
+                <td>pocket</td>
+              </tr>
+              <tr>
+                <td>Hatena</td>
+                <td>hatena</td>
+              </tr>
+              <tr>
+                <td>Scoop.it</td>
+                <td>scoopit</td>
+              </tr>
+              <tr>
+                <td>Renren</td>
+                <td>renren</td>
+              </tr>
+              <tr>
+                <td>Xing</td>
+                <td>xing</td>
+              </tr>
+              <tr>
+                <td>Hacker News</td>
+                <td>hackernews</td>
+              </tr>
+              <tr>
+                <td>Mixi</td>
+                <td>mixi</td>
+              </tr>
+              <tr>
+                <td>Wykop</td>
+                <td>wykop</td>
+              </tr>
+              <tr>
+                <td>Buffer</td>
+                <td>buffer</td>
+              </tr>
+              <tr>
+                <td>StumbleUpon</td>
+                <td>stumbleupon</td>
+              </tr>
+              <tr>
+                <td>Kaixin001</td>
+                <td>kaixin001</td>
+              </tr>
+              <tr>
+                <td>Yummly</td>
+                <td>yummly</td>
+              </tr>
+              <tr>
+                <td>Nk.pl</td>
+                <td>nk</td>
+              </tr>
+              <tr>
+                <td>Diigo</td>
+                <td>diigo</td>
+              </tr>
+              <tr>
+                <td>Surfingbird</td>
+                <td>surfingbird</td>
+              </tr>
+              <tr>
+                <td>Draugiem</td>
+                <td>draugiem</td>
+              </tr>
+              <tr>
+                <td>Fancy</td>
+                <td>fancy</td>
+              </tr>
+              <tr>
+                <td>Delicious</td>
+                <td>delicious</td>
+              </tr>
+              <tr>
+                <td>BibSonomy</td>
+                <td>bibsonomy</td>
+              </tr>
+              <tr>
+                <td>vkrugudruzei.ru</td>
+                <td>vkrugudruzei</td>
+              </tr>
+              <tr>
+                <td>BizSugar</td>
+                <td>bizsugar</td>
+              </tr>
+              <tr>
+                <td>DesignFloat</td>
+                <td>designfloat</td>
+              </tr>
+              <tr>
+                <td>Blog Engage</td>
+                <td>blogengage</td>
+              </tr>
+              <tr>
+                <td>Pusha</td>
+                <td>pusha</td>
+              </tr>
+              <tr>
+                <td>Svejo</td>
+                <td>svejo</td>
+              </tr>
+              <tr>
+                <td>moShare</td>
+                <td>moshare</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="enable-twitter-count">Enable Twitter Count</h3>
+          <p>Twitter counts are retrieved using <a href="http://newsharecounts.com">newsharecounts.com</a>. To enable them please visit <a href="http://newsharecounts.com">newsharecounts.com</a> and register your website (it’s free).</p>
+          <h2 class="page-header" id="follower-count">Follower Count</h2>
+          <p>Follower counts for social profiles are retrieved using the <code class="highlighter-rouge">/followers</code> endpoint.</p>
+          <p class="alert alert-danger"><strong>Important</strong>: follower counts are still in <strong>BETA</strong> and the response format is likely to change in the near future.</p>
+          <h3 id="parameters-1">Parameters</h3>
+          <p>Pass all the social profiles for which you’d like to request the follower count to the API as GET parameters, using the <a href="#providers">provider ID</a> as the parameter name and your profile username, ID or URL as the value.</p>
+          <h3 id="example-1">Example</h3>
+          <p>In the following example we’re fetching the follower counts for Twitter &amp; Facebook.</p>
+          <div class="language-http highlighter-rouge">
+            <pre class="highlight"><code><span class="nf">GET</span> <span class="nn">/followers?twitter=abemedia&amp;facebook=abemedia</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.donreach.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">YOUR_API_KEY</span>
+</code></pre>
+          </div>
+          <p class="alert alert-info">Heads up: you can also use profile URLs instead of usernames/IDs e.g. <code class="highlighter-rouge">/followers?twitter=abemedia</code> is the same as <code class="highlighter-rouge">/followers?twitter=https://twitter.com/abemedia</code>.</p>
+          <p>Which returns the following:</p>
+          <div class="language-json highlighter-rouge">
+            <pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"followers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"facebook"</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"twitter"</span><span class="p">:</span><span class="w"> </span><span class="mi">529</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">630</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          </div>
+          <h3 id="providers-1">Providers</h3>
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google+</td>
+                <td>google</td>
+              </tr>
+              <tr>
+                <td>YouTube</td>
+                <td>youtube</td>
+              </tr>
+              <tr>
+                <td>Facebook</td>
+                <td>facebook</td>
+              </tr>
+              <tr>
+                <td>Twitter</td>
+                <td>twitter</td>
+              </tr>
+              <tr>
+                <td>Instagram</td>
+                <td>instagram</td>
+              </tr>
+              <tr>
+                <td>Twitch</td>
+                <td>twitch</td>
+              </tr>
+              <tr>
+                <td>Github</td>
+                <td>github</td>
+              </tr>
+              <tr>
+                <td>Tumblr</td>
+                <td>tumblr</td>
+              </tr>
+              <tr>
+                <td>Pinterest</td>
+                <td>pinterest</td>
+              </tr>
+              <tr>
+                <td>SoundCloud</td>
+                <td>soundcloud</td>
+              </tr>
+              <tr>
+                <td>Spotify</td>
+                <td>spotify</td>
+              </tr>
+              <tr>
+                <td>Vimeo</td>
+                <td>vimeo</td>
+              </tr>
+              <tr>
+                <td>Medium</td>
+                <td>medium</td>
+              </tr>
+              <tr>
+                <td>Steam</td>
+                <td>steam</td>
+              </tr>
+              <tr>
+                <td>Flickr</td>
+                <td>flickr</td>
+              </tr>
+              <tr>
+                <td>Behance</td>
+                <td>behance</td>
+              </tr>
+              <tr>
+                <td>Bitbucket</td>
+                <td>bitbucket</td>
+              </tr>
+              <tr>
+                <td>Dribbble</td>
+                <td>dribbble</td>
+              </tr>
+              <tr>
+                <td>Envato</td>
+                <td>envato</td>
+              </tr>
+              <tr>
+                <td>Foursquare</td>
+                <td>foursquare</td>
+              </tr>
+              <tr>
+                <td>MixCloud</td>
+                <td>mixcloud</td>
+              </tr>
+              <tr>
+                <td>Typepad</td>
+                <td>typepad</td>
+              </tr>
+              <tr>
+                <td>Flipboard</td>
+                <td>flipboard</td>
+              </tr>
+              <tr>
+                <td>Meneame</td>
+                <td>meneame</td>
+              </tr>
+              <tr>
+                <td>Diigo</td>
+                <td>diigo</td>
+              </tr>
+              <tr>
+                <td>Vine</td>
+                <td>vine</td>
+              </tr>
+              <tr>
+                <td>folkd</td>
+                <td>folkd</td>
+              </tr>
+              <tr>
+                <td>Delicious</td>
+                <td>delicious</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <aside class="bg-dark section-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h5>About</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="https://donreach.com/about/">About Us</a></li>
+                    <li><a href="https://donreach.com/status/">Service Status</a></li>
+                    <li><a href="https://donreach.com/support/contact/">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <h5>Website Tools</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="https://donreach.com/social-share-buttons/">Social Share Buttons</a></li>
+                    <li><a href="https://donreach.com/social-analytics/">Social Analytics</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <h5>Developers</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="https://donreach.com/social-api/">Social API</a></li>
+                    <li><a href="https://donreach.com/docs/social-api/reference">API Reference</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h5>Sign up to our newsletter</h5>
+              <form action="//donreach.us12.list-manage.com/subscribe/post?u=19f5bb05244ae36c163a8da9c&amp;id=82f4e7435d" method="post" class="mailchimp_form" target="_blank">
+                <label class="sr-only" for="newsletter_email">Email Address</label>
+                <div class="input-group">
+                  <input type="email" id="newsletter_email" name="EMAIL" class="form-control" placeholder="Enter email" size="50" required>
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Go</button>
+                  </span>
+                </div>
+                <p class="help-block small">*We'll never spam you or share your email address!</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="container section-sm">
+        <p class="text-left">
+          &copy; 2014 - 2018 donreach.com
+          &middot; <a href="https://donreach.com/privacy">Privacy</a>
+          &middot; <a href="https://donreach.com/terms">Terms</a>
+          <span class="pull-right">Website by
+            <a onclick="document.getElementById('credit').click(); return false;" href="#">ABE Media</a>
+            <a href="http://abemedia.co.uk/" title="Web Design Brighton" target="_blank" id="credit" class="sr-only">Web Design Brighton</a>
+          </span>
+        </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="/assets/app-5ed9ca3c280b648e828707741f28b6be2283f28953a69df882c77f037e1982cb.js"></script>
+    <script type="text/javascript" src="/assets/apps/api-reference-4f673ae9b3ac3c74b0930d52272c71112e9de5f5909517c00b8febb3b22b8bbb.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-22039203-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" id="app_{{ tmpl }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} &middot; donReach Social Tools</title>
+    <meta name="description" content="Increase your social reach and drive more traffic with our free social tools & widgets.">
+    <meta name="keywords" content="share buttons, share count, social analytics">
+    <link rel="icon" href="https://donreach.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://donreach.com/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="https://donreach.com/assets/images/touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://donreach.com/assets/images/touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://donreach.com/assets/images/touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://donreach.com/assets/images/touch-icon-152x152-precomposed.png">
+    <meta name="author" content="Adam Bouqdib">
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="Increase your social reach and drive more traffic with our free social tools & widgets." />
+    <meta property="og:image" content="https://donreach.com/assets/logo-729439f380dfbef4ae34f4606cd7e3297d44eaf115e7e40c2e8c4f7bc00d035a.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="donReach Social Tools"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@abemedia"/>
+    <meta name="twitter:domain" content="https://donreach.com"/>
+    <meta name="twitter:creator" content="@abemedia"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://donreach.com/assets/app-b8f9d5fccb1707386a171b0f2e0697ea9778cdb396b3e49b068a451890284329.css">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:light,regular,bold' />
+    <link rel="alternate" type="application/rss+xml" title="donReach Social Tools" href="https://donreach.com/feed.xml">
+    <link rel="stylesheet" href="{{ config('URL') }}css/app.css" />
+    <script>
+      var baseurl = '{{ config('URL') }}', currenturl = '{{ uri.current }}', vars = {{ vars | json_encode | raw }};
+    </script>
+    {% block header %}{% endblock %}
+  </head>
+  <body id="{{ block('page_id') }}">
+    {% block wrapper %}{% block container %}{% block content %}{% endblock %}{% endblock %}{% endblock %}
+    <script src="https://donreach.com/assets/app-5ed9ca3c280b648e828707741f28b6be2283f28953a69df882c77f037e1982cb.js"></script>
+    <script src="{{ config('URL') }}js/app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-22039203-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</body>
+</html>

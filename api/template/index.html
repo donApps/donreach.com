@@ -1,0 +1,201 @@
+{% extends '_templates/default.html' %}{% block wrapper %}
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="navbar navbar-default navbar-fixed-top" id="navbar">
+  <ul class="nav navbar-nav hidden-xs">
+    <li class="don-menu">
+      <a href="#"><i class="fa fa-bars fa-lg"></i> MENU</a>
+      <ul class="don-nav">
+        <li>
+          <a href="#">Products<i class="fa fa-chevron-right"></i></a>
+          <ul class="don-nav">
+            <li><a href="https://donreach.com/products/"><b>Products</b></a></li>
+            <li class="active">
+              <a href="https://donreach.com/social-api/">
+                Social API <span>Easily track shares & followers from all the most popular social platforms.</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="https://donreach.com/social-share-buttons/">
+                Social Share Buttons <span>Engage your audience and get more shares & likes with our free, customisable social sharing buttons.</span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="https://donreach.com/social-analytics/">
+                Social Analytics <span>Understand your visitors, monitor your competition and stay up-to-date with what's currently trending.</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Documentation<i class="fa fa-chevron-right"></i></a>
+          <ul class="don-nav">
+            <li><a href="https://donreach.com/docs/"><b>Documentation</b></a></li>
+            <li class="active">
+              <a href="https://donreach.com/docs/social-share-buttons">
+                Social Share Buttons <span></span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="https://donreach.com/docs/social-api">
+                Social API <span></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://donreach.com/pricing/">Pricing</a>
+        </li>
+        <li>
+          <a href="#">Support<i class="fa fa-chevron-right"></i></a>
+          <ul class="don-nav">
+            <li><a href="https://donreach.com/support/"><b>Support</b></a></li>
+            <li class="active">
+              <a href="https://donreach.com/support/accounts-billing/">
+                Accounts & Billing <span></span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="https://donreach.com/support/social-api/">
+                Social API <span></span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="https://donreach.com/support/share-buttons/">
+                Social Share Buttons <span></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Blog<i class="fa fa-chevron-right"></i></a>
+          <ul class="don-nav">
+            <li><a href="https://donreach.com/blog/"><b>Blog</b></a></li>
+            <li class="active">
+              <a href="https://donreach.com/blog/public-api-depreciated/">
+                Public social share count API depreciated <span></span>
+              </a>
+            </li>
+            <li class="active">
+              <a href="https://donreach.com/blog/social-api-premium-launched/">
+                Celebrate the launch of our new social share count API with a 50% discount! <span></span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <hr>
+          <form action="https://donreach.com/search">
+            <div class="input-group">
+              <input type="search" name="q" class="form-control" placeholder="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><span class="fa fa-search"></span></button>
+              </span>
+            </div>
+          </form>
+          <hr>
+          <h5>Connect with us</h5>
+          <ul class="list-inline">
+            <li><a href="https://facebook.com/abemedia" target="_blank" class="btn don-btn-facebook"><i class="fa fa-fw fa-lg bi bi-facebook"></i></a></li>
+            <li><a href="https://twitter.com/abemedia" target="_blank" class="btn don-btn-twitter"><i class="fa fa-fw fa-lg bi bi-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/abemedia" target="_blank" class="btn don-btn-google"><i class="fa fa-fw fa-lg bi bi-google"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="pull-right">
+    <a href="https://my.donreach.com/login" class="btn btn-default navbar-btn" data-user-text="My Account" data-welcome="Welcome back {user}!" id="login_btn">Sign in</a>
+  </div>
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="https://donreach.com/">
+      <img src="https://donreach.com/assets/logo-729439f380dfbef4ae34f4606cd7e3297d44eaf115e7e40c2e8c4f7bc00d035a.png" alt="donReach Social Tools" />
+    </a>
+  </div>
+  <nav class="navbar-collapse collapse" role="navigation">
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="https://donreach.com/products/">Products</a>
+      </li>
+      <li>
+        <a href="https://donreach.com/docs/">Documentation</a>
+      </li>
+      <li>
+        <a href="https://donreach.com/pricing/">Pricing</a>
+      </li>
+      <li>
+        <a href="https://donreach.com/support/">Support</a>
+      </li>
+      <li>
+        <a href="https://donreach.com/blog/">Blog</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="container section" id="content">
+  {{ messages() }}
+  {% block container %}{% block content %}{% endblock %}{% endblock %}
+</div>
+<footer id="footer">
+  <aside class="bg-dark section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5>About</h5>
+              <ul class="list-unstyled">
+                <li><a href="https://donreach.com/about/">About Us</a></li>
+                <li><a href="https://donreach.com/status/">Service Status</a></li>
+                <li><a href="https://donreach.com/support/contact/">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h5>Website Tools</h5>
+              <ul class="list-unstyled">
+                <li><a href="https://donreach.com/social-share-buttons/">Social Share Buttons</a></li>
+                <li><a href="https://donreach.com/social-analytics/">Social Analytics</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h5>Developers</h5>
+              <ul class="list-unstyled">
+                <li><a href="https://donreach.com/social-api/">Social API</a></li>
+                <li><a href="https://donreach.com/docs/social-api/reference">API Reference</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h5>Sign up to our newsletter</h5>
+          <form action="//donreach.us12.list-manage.com/subscribe/post?u=19f5bb05244ae36c163a8da9c&amp;id=82f4e7435d" method="post" class="mailchimp_form" target="_blank">
+            <label class="sr-only" for="newsletter_email">Email Address</label>
+            <div class="input-group">
+              <input type="email" id="newsletter_email" name="EMAIL" class="form-control" placeholder="Enter email" size="50" required>
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Go</button>
+              </span>
+            </div>
+            <p class="help-block small">*We'll never spam you or share your email address!</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="container section-sm">
+    <p class="text-left">
+      &copy; 2014 - 2018 donreach.com
+      &middot; <a href="https://donreach.com/privacy">Privacy</a>
+      &middot; <a href="https://donreach.com/terms">Terms</a>
+      <span class="pull-right">Website by
+        <a onclick="document.getElementById('credit').click(); return false;" href="#">ABE Media</a>
+        <a href="http://abemedia.co.uk/" title="Web Design Brighton" target="_blank" id="credit" class="sr-only">Web Design Brighton</a>
+      </span>
+    </p>
+  </div>
+</footer>
+{% endblock %}
